@@ -12,9 +12,9 @@ class BrasilHelper
 
     public static function checkIE($ie = false, $uf = false)
     {
-        $InscricaoEstadual = new InscricaoEstadual();
-        return $InscricaoEstadual->inscricao_estadual($ie, $uf);
+        return InscricaoEstadual::inscricao_estadual($ie, $uf);
     }
+    
     /**
      * Estados Brasileiros
      *
